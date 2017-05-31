@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>SentinelMap Quick Start</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+	  integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+	  crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+	    integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+	    crossorigin=""></script>
+
+    <style>
+      /* Reset */
+      html, body, div {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font-size: 100%;
+          font: inherit;
+          vertical-align: baseline;
+      }
+      html, .map-layout {
+          height: 100%;
+      }
+          .map-layout > #content {
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+      }
+      .map-layout > #content > #map {
+          height: 100%;
+      }
+    </style>
+    
+  </head>
+
+  <body class="map-layout">
+
+    <div id="content">
+      <div id="map">
+	<script>
+
+          var Url = 'https://tile.sentinelmap.eu/2016/summer/rgb/{z}/{x}/{y}.jpg?key=<my-sentinelmap-key>';
+
+	  var Attr = 'Modified <a href="https://scihub.copernicus.eu/">Copernicus</a>' +
+	  ' Sentinel data 2016 by ' +
+	  '<a href="https://www.sentinelmap.eu">SentinelMap</a>' ;
+
+	  var Layer = L.tileLayer(Url, {attribution: Attr});
+
+	  var map = L.map('map', {
+	  center: [48.92, 11.25],
+	  zoom: 6,
+	  maxZoom: 14,
+	  minZoom: 5,
+	  layers: [Layer],
+	  });
+	  
+	</script>
+      </div><!-- end map -->
+    </div>
+    
+  </body>
+</html>
