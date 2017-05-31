@@ -10,7 +10,7 @@ Get a new Basemaps API key.
 
 Download the Leaflet example file:
 
-index.html
+[index.html](https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/Leaflet_quick-start/index.html)
 
 Edit the tiles URL adding your key:
 
@@ -24,7 +24,7 @@ Now you can open it with your favourite browser.
 
 Download the local service description XML file:
 
-wms_sentinelmap.xml
+[wms_sentinelmap.xml](https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/WMS/wms_sentinelmap.xml)
 
 Edit the tiles URL adding your key:
 
@@ -36,7 +36,11 @@ Now you can open it as raster layer with QGIS.
 
 Or save an image with 'gdal_translate', usage example:
 
+``` sh
 gdal_translate -of GTIFF -outsize 100% 100% -projwin 1368500 5693500 1378500 5687500 -CO "TILED=YES" -CO "COMPRESS=JPEG" -CO "JPEG_QUALITY=75" -CO "PHOTOMETRIC=YCBCR" wms_sentinelmap.xml Venice.tif
+```
 
+``` sh
 gdal_translate -of GTIFF -outsize 1% 1% -projwin 640000 6040000 1520000 5460000 -CO "TILED=YES" -CO "COMPRESS=JPEG" -CO "JPEG_QUALITY=75" -CO "PHOTOMETRIC=YCBCR" wms_sentinelmap.xml Alps.tif
+```
 
