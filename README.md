@@ -1,6 +1,8 @@
-# SentinelMap Services beta - online soon
+# SentinelMap Services beta
 
-Sign up for free with a Github account for access up to 50,000 Sentinel-2 tiles monthly.
+SentinelMap Services documentation and tools.
+
+[Sign up](https://devs.sentinelmap.eu) for free with a Github account for access up to 50,000 Sentinel-2 tiles monthly.
 
 ## Basemap Tile Service
 
@@ -10,7 +12,7 @@ Get a new Basemaps API key.
 
 Download the Leaflet example file:
 
-[index.html](https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/Leaflet_quick-start/index.html)
+<a href="https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/Leaflet_quick-start/index.html" download> index.html </a>
 
 Edit the tiles URL adding your key:
 
@@ -18,13 +20,13 @@ Edit the tiles URL adding your key:
 var Url = 'https://tile.sentinelmap.eu/2016/summer/rgb/{z}/{x}/{y}.jpg?key=<my-sentinelmap-key>';
 ```
 
-Now you can open it with your favourite browser.
+Now you can open it with your browser.
 
 ### Accessing Sentinelmap using the WMS format in GDAL
 
 Download the local service description XML file:
 
-[wms_sentinelmap.xml](https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/WMS/wms_sentinelmap.xml)
+<a href="https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/WMS/wms_sentinelmap.xml" download> wms_sentinelmap.xml </a>
 
 Edit the tiles URL adding your key:
 
