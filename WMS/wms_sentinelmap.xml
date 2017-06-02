@@ -4,10 +4,14 @@
     <ImageFormat>image/jpeg</ImageFormat>
   </Service>
   <DataWindow>
-    <UpperLeftX>-20037508.34</UpperLeftX>
-    <UpperLeftY>20037508.34</UpperLeftY>
-    <LowerRightX>20037508.34</LowerRightX>
-    <LowerRightY>-20037508.34</LowerRightY>
+    <UpperLeftX>0</UpperLeftX>
+    <UpperLeftY>7514066</UpperLeftY>
+    <LowerRightX>2504689</LowerRightX>
+    <LowerRightY>5009377</LowerRightY>
+    <SizeX>262144</SizeX>
+    <SizeY>262144</SizeY>
+    <TileX>8192</TileX>
+    <TileY>5120</TileY>
     <TileLevel>14</TileLevel>
     <TileCountX>1</TileCountX>
     <TileCountY>1</TileCountY>
