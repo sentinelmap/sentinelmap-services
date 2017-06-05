@@ -14,7 +14,7 @@ Download the Leaflet example file:
 
 <a href="https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/Leaflet_quick-start/index.html" download> index.html </a>
 
-Edit the tiles URL adding your key:
+Edit the tiles URL (line 48) adding your key:
 
 ``` javascript
 var Url = 'https://tile.sentinelmap.eu/2016/summer/rgb/{z}/{x}/{y}.jpg?key=<my-sentinelmap-key>';
@@ -28,7 +28,7 @@ Download the local service description XML file:
 
 <a href="https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/WMS/wms_sentinelmap.xml" download> wms_sentinelmap.xml </a>
 
-Edit the tiles URL adding your key:
+Edit the tiles URL (line 3) adding your key:
 
 ``` xml
 <ServerUrl>https://tile.sentinelmap.eu/2016/summer/rgb/${z}/${x}/${y}.jpg?key=<my-sentinelmap-key></ServerUrl>
