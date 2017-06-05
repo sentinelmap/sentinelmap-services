@@ -1,6 +1,6 @@
 <GDAL_WMS>
   <Service name="TMS">
-    <ServerUrl>https://tile.sentinelmap.eu/2016/summer/rgb/${z}/${x}/${y}.jpg?key=<my-sentinelmap-key></ServerUrl>
+    <ServerUrl>https://tile.sentinelmap.eu/2016/summer/rgb/${z}/${x}/${y}.jpg?key=_my-sentinelmap-key_</ServerUrl>
     <ImageFormat>image/jpeg</ImageFormat>
   </Service>
   <DataWindow>

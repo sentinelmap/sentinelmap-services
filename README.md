@@ -12,12 +12,12 @@ Get a new Basemaps API key.
 
 Download the Leaflet example file:
 
-<a href="https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/Leaflet_quick-start/index.html" download> index.html </a>
+[index.html](https://github.com/sentinelmap/sentinelmap-services/blob/master/Leaflet_quick-start/index.html) \[[raw file](https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/Leaflet_quick-start/index.html)\]
 
-Edit the tiles URL (line 48) adding your key:
+Edit the tiles URL \([line 48](https://github.com/sentinelmap/sentinelmap-services/blob/master/Leaflet_quick-start/index.html#L48)\) adding your key:
 
 ``` javascript
-var Url = 'https://tile.sentinelmap.eu/2016/summer/rgb/{z}/{x}/{y}.jpg?key=<my-sentinelmap-key>';
+var Url = 'https://tile.sentinelmap.eu/2016/summer/rgb/{z}/{x}/{y}.jpg?key=_my-sentinelmap-key_';
 ```
 
 Now you can open it with your browser.
@@ -26,12 +26,12 @@ Now you can open it with your browser.
 
 Download the local service description XML file:
 
-<a href="https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/WMS/wms_sentinelmap.xml" download> wms_sentinelmap.xml </a>
+[wms_sentinelmap.xml](https://github.com/sentinelmap/sentinelmap-services/blob/master/WMS/wms_sentinelmap.xml) \[[raw file](https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/WMS/wms_sentinelmap.xml)\]
 
-Edit the tiles URL (line 3) adding your key:
+Edit the tiles URL \([line 3](https://github.com/sentinelmap/sentinelmap-services/blob/master/WMS/wms_sentinelmap.xml#L3)\) adding your key:
 
 ``` xml
-<ServerUrl>https://tile.sentinelmap.eu/2016/summer/rgb/${z}/${x}/${y}.jpg?key=<my-sentinelmap-key></ServerUrl>
+<ServerUrl>https://tile.sentinelmap.eu/2016/summer/rgb/${z}/${x}/${y}.jpg?key=_my-sentinelmap-key_</ServerUrl>
 ```
 
 Now you can open it as raster layer with QGIS.
