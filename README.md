@@ -10,9 +10,9 @@ Get a new Basemaps API key.
 
 ### Leaflet quick-start example
 
-Download the Leaflet example file:
+For running an interactive web map using [Leaflet](http://leafletjs.com/), you can start with this example file:
 
-[index.html](https://github.com/sentinelmap/sentinelmap-services/blob/master/Leaflet_quick-start/index.html) \[[raw file](https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/Leaflet_quick-start/index.html)\]
+[index.html](https://github.com/sentinelmap/sentinelmap-services/blob/master/Leaflet_quick-start/index.html) \[[download raw file](https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/Leaflet_quick-start/index.html)\]
 
 Edit the tiles URL \([line 48](https://github.com/sentinelmap/sentinelmap-services/blob/master/Leaflet_quick-start/index.html#L48)\) adding your key:
 
@@ -20,13 +20,13 @@ Edit the tiles URL \([line 48](https://github.com/sentinelmap/sentinelmap-servic
 var Url = 'https://tile.sentinelmap.eu/2016/summer/rgb/{z}/{x}/{y}.jpg?key=_my-sentinelmap-key_';
 ```
 
-Now you can open it with your browser.
+Now you can open it with your browser or deploy on the web.
 
 ### Accessing Sentinelmap using the WMS format in GDAL
 
-Download the local service description XML file:
+Accessing the service is also  possible using the WMS format in [GDAL](http://www.gdal.org/). Service is accessed by using this local service description XML file:
 
-[wms_sentinelmap.xml](https://github.com/sentinelmap/sentinelmap-services/blob/master/WMS/wms_sentinelmap.xml) \[[raw file](https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/WMS/wms_sentinelmap.xml)\]
+[wms_sentinelmap.xml](https://github.com/sentinelmap/sentinelmap-services/blob/master/WMS/wms_sentinelmap.xml) \[[downlaod raw file](https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/WMS/wms_sentinelmap.xml)\]
 
 Edit the tiles URL \([line 3](https://github.com/sentinelmap/sentinelmap-services/blob/master/WMS/wms_sentinelmap.xml#L3)\) adding your key:
 
@@ -34,9 +34,9 @@ Edit the tiles URL \([line 3](https://github.com/sentinelmap/sentinelmap-service
 <ServerUrl>https://tile.sentinelmap.eu/2016/summer/rgb/${z}/${x}/${y}.jpg?key=_my-sentinelmap-key_</ServerUrl>
 ```
 
-Now you can open it as raster layer with QGIS.
+Now you can open it as raster layer with [QGIS](http://www.qgis.org).
 
-Or save an image with 'gdal_translate', usage example:
+Or save an image with '[gdal_translate](http://www.gdal.org/gdal_translate.html)', usage examples:
 
 ``` sh
 gdal_translate -of GTIFF -outsize 100% 100% -projwin 1368500 5693500 1378500 5687500 -CO "TILED=YES" -CO "COMPRESS=JPEG" -CO "JPEG_QUALITY=75" -CO "PHOTOMETRIC=YCBCR" wms_sentinelmap.xml Venice.tif
