@@ -1,12 +1,12 @@
 # SentinelMap Services beta
 
-SentinelMap Services documentation and tools. Check the *(Wiki)[https://github.com/sentinelmap/sentinelmap-services/wiki]*.
+SentinelMap Services documentation and tools. Check the [**Wiki**](https://github.com/sentinelmap/sentinelmap-services/wiki).
 
 [Sign up](https://devs.sentinelmap.eu) for free with a Github account to access up to 50,000 Sentinel-2 tiles monthly.
 
 ## Basemap Tile Service
 
-*A cloud-free Sentinel-2 tile layer for developing applications and GIS products by SentinelMap.*
+**A cloud-free Sentinel-2 tile layer for developing applications and GIS products by SentinelMap.**
 
 For start mapping, you need to get a new Basemaps API key through the user [Dashboard](https://devs.sentinelmap.eu)
 
