@@ -1,14 +1,20 @@
 # SentinelMap Services beta
 
-SentinelMap Services documentation and tools.
+SentinelMap Services documentation and tools. Check the *(Wiki)[https://github.com/sentinelmap/sentinelmap-services/wiki]*.
 
-[Sign up](https://devs.sentinelmap.eu) for free with a Github account for access up to 50,000 Sentinel-2 tiles monthly.
+[Sign up](https://devs.sentinelmap.eu) for free with a Github account to access up to 50,000 Sentinel-2 tiles monthly.
 
 ## Basemap Tile Service
 
-Get a new Basemaps API key.
+*A cloud-free Sentinel-2 tile layer for developing applications and GIS products by SentinelMap.*
 
-### Leaflet quick-start example
+For start mapping, you need to get a new Basemaps API key through the user [Dashboard](https://devs.sentinelmap.eu)
+
+If you are new, you can follow the [Dashboard Walkthrough](https://github.com/sentinelmap/sentinelmap-services/wiki/Dashboard-Walkthrough).
+
+### Leaflet, QGIS, GDAL 1 minute start
+
+#### Leaflet example
 
 For running an interactive web map using [Leaflet](http://leafletjs.com/), you can start with this example file:
 
@@ -22,9 +28,9 @@ var Url = 'https://tile.sentinelmap.eu/2016/summer/rgb/{z}/{x}/{y}.jpg?key=_my-s
 
 Now you can open it with your browser or deploy on the web.
 
-### Accessing Sentinelmap using the WMS format in GDAL
+#### Accessing Sentinelmap using the WMS format in GDAL
 
-Accessing the service is also  possible using the WMS format in [GDAL](http://www.gdal.org/). Service is accessed by using this local service description XML file:
+Accessing the service is also possible using the WMS format in [GDAL](http://www.gdal.org/). Service is accessed by using this local service description XML file:
 
 [wms_sentinelmap.xml](https://github.com/sentinelmap/sentinelmap-services/blob/master/WMS/wms_sentinelmap.xml) \[[download raw file](https://raw.githubusercontent.com/sentinelmap/sentinelmap-services/master/WMS/wms_sentinelmap.xml)\]
 
